@@ -1,14 +1,24 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import Joblist from './jobs'
+import AddJob from './addJob'
+import Footer from './footer'
+import Header from './header'
+interface Props {
+  id: number
+}
 
-function App() {
-  const { data } = useFruits()
-
+function App(id: Props) {
   return (
     <>
-      <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>{data && data.map((fruit) => <li key={fruit}>{fruit}</li>)}</ul>
-      </div>
+      <header className="header">
+        <Header />
+      </header>
+      <section className="main">
+        <AddJob />
+        <Joblist />
+      </section>
+      <footer className="footer">
+        <Footer />
+      </footer>
     </>
   )
 }
