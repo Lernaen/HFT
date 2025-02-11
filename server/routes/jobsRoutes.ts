@@ -14,16 +14,16 @@ router.get('/', async (req, res) => {
   }
 })
 
-router.get('/:id', async (req, res) => {
-  try {
-    const id = Number(req.params.id)
-    const jobs = await db.getJobsbyId(id)
-    res.json(jobs)
-  } catch (error) {
-    console.error(`${error}`)
-    res.sendStatus(500)
-  }
-})
+//router.get('/:id', async (req, res) => {
+//  try {
+//    const id = Number(req.params.id)
+//    const jobs = await db.getJobsbyId(id)
+//    res.json(jobs)
+//  } catch (error) {
+//    console.error(`${error}`)
+//    res.sendStatus(500)
+//  }
+//})
 
 //router.delete('/:id', async (req, res) => {
 //  try {
