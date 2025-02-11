@@ -22,8 +22,8 @@ function Joblist() {
       <div>
         <p>List Of Jobs</p>
         <DropButton>
-          {data?.map((job) => {
-            return <li key={job.id}>{job.jobDate}</li>
+          {data?.map((jobs) => {
+            return <li key={jobs.id}>{jobs.jobDate}</li>
           })}{' '}
         </DropButton>
       </div>
