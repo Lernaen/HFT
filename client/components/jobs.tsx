@@ -4,7 +4,7 @@ import DropButton from './DropButton.tsx'
 
 function Joblist() {
   const { data, isPending, isError, error } = useQuery({
-    queryKey: ['jobs'],
+    queryKey: ['job'],
     queryFn: () => getAllJobs(),
   })
 
