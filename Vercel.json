@@ -11,10 +11,6 @@
     {
       "src": "/dist/assets/server.js",
       "dest": "/server/api/v1/jobs"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/v1/jobs"
     }
   ]
 }
