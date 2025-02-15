@@ -7,7 +7,7 @@ const server = express()
 
 server.use(express.json())
 
-server.use('/api/jobs', jobRoutes)
+server.use('/api/v1/jobs', jobRoutes)
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(Path.resolve('public')))
