@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/dist/assets/server.js",
-      "dest": "/server/api/v1/jobs"
+      "dest": "/api/v1/jobs"
     }
   ]
 }
