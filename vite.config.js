@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3000',
+      '/api': 'https://hammond-fertiliser-tracker-21b964005429.herokuapp.com/',
     },
   },
 })
