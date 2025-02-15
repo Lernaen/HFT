@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://hammondferttracker.vercel.app',
+      '/api': 'https://fert-tracker-server.vercel.app',
     },
   },
 })
