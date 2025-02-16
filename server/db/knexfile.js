@@ -34,10 +34,10 @@ export default {
   },
 
   production: {
-    client: 'pg',
-    connection: process.env.DATABASE_URL,
-    migrations: {
-      tableName: 'knex_migrations',
+    client: 'sqlite3',
+    useNullAsDefault: true,
+    connection: {
+      filename: '/tmp/prod.sqlite3',
     },
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
