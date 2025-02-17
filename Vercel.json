@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/react"
+    }
+    
+  ],
+  "routes": [
+    {
+      "src": "/dist/assets/server.js",
+      "dest": "/api/v1/jobs"
+    }
+  ]
+}
